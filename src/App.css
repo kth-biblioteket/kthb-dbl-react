@@ -1,0 +1,182 @@
+body {
+  font-family: "Open Sans", Arial, "Helvetica Neue", helvetica, sans-serif;
+  padding: 1em;
+}
+
+body #gradientBorder {
+  height: 6px;
+  background-image: linear-gradient(to left, #005ea4, #5c98c4);
+}
+
+.flex-box {
+  display:flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+main .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 0rem;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
+
+.nav-link.active {
+  color: red;
+}
+
+.navbar {
+  display: block !important;
+}
+
+.navbar-nav {
+  flex: 1
+}
+
+.navbar-brand {
+  font-family: "Open Sans", Arial, "Helvetica Neue", helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.375;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  max-width: calc(100% - 136px);
+  position: relative;
+  top: -5px;
+}
+
+.navbar-brand img {
+  margin: 0 30px 0 0;
+}
+
+.header {
+  padding-top: 10px;
+}
+
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.ais-CurrentRefinements-list{
+  display: flex !important;
+  flex-direction: column;
+}
+
+.ais-CurrentRefinements-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ais-CurrentRefinements-category {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.ais-RefinementList {
+  padding-bottom: 20px;
+}
+
+.ais-ClearRefinements {
+  margin: 1em 0;
+  width: 200px;
+}
+
+.ais-Pagination {
+  margin-top: 1em;
+}
+
+.left-panel {
+  flex: 3;
+  padding: 10px;
+}
+
+.right-panel {
+  flex: 5;
+}
+
+.ais-InstantSearch {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ais-HierarchicalMenu-label, .ais-Menu-label, .ais-RefinementList-labelText {
+  white-space: break-spaces;
+  }
+
+.ais-Hits-item,
+.ais-InfiniteHits-item {
+  margin-bottom: 1em;
+  width: calc(50% - 1rem);
+  width: 100%;
+  box-shadow: none;
+  border: 1px rgba(35, 38, 59, 0.15) solid;
+}
+
+.ais-Hits-item div,
+.ais-InfiniteHits-item div {
+  width: 100%;
+}
+
+.ais-Hits-item img,
+.ais-InfiniteHits-item img {
+  margin-right: 1em;
+}
+
+.hit-Fnamn,
+.hit-Enamn,
+.hit-KTH_id,
+.hit-Orgnamn,
+.hit-Bef_ben,
+.hit-ORCIDid,
+.hit-Anst_nuv_bef,
+.hit-Bef_t_o_m,
+.hit-Fil_datum {
+  margin-bottom: 0.5em;
+}
+
+.ugAffiliation {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.field {
+  width: 80%;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.field div {
+  flex: 1;
+  word-break: break-word;
+}
+
+.shit-Orgnamn {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 990px) {
+  .ais-InstantSearch {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+  }
+}
